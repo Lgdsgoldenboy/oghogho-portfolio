@@ -1,0 +1,150 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 0.5px solid var(--border);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.project.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projL {
+  padding: 4rem 3.5rem;
+  border-right: 0.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.projR {
+  padding: 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.projIdx {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--subtle);
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.projName {
+  font-family: var(--serif);
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 0.6rem;
+}
+
+.projYear {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--subtle);
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.projTags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.projTag {
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 4px 10px;
+  border: 0.5px solid var(--border2);
+  border-radius: 20px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+.projVisual {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.projVisualInner {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  border: 0.5px solid var(--border);
+  background: var(--bg2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.project:hover .projVisualInner {
+  border-color: rgba(180, 156, 255, 0.2);
+}
+
+.projImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transform: translateY(0);
+  transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease;
+  filter: saturate(0.85) brightness(0.9);
+}
+
+.project:hover .projImg {
+  transform: translateY(calc(-100% + 220px));
+  filter: saturate(1) brightness(1);
+}
+
+.projDesc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-family: var(--mono);
+}
+
+.projLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  text-decoration: none;
+  border: 0.5px solid rgba(180, 156, 255, 0.25);
+  padding: 8px 18px;
+  border-radius: 20px;
+  width: fit-content;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.projLink:hover {
+  background: var(--accent-dim);
+}
+
+.arr {
+  transition: transform 0.2s;
+}
+
+.projLink:hover .arr {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 768px) {
+  .project { grid-template-columns: 1fr; }
+  .projL { border-right: none; border-bottom: 0.5px solid var(--border); padding: 2.5rem 1.5rem; }
+  .projR { padding: 2.5rem 1.5rem; }
+}

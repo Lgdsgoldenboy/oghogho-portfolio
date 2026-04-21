@@ -1,0 +1,19 @@
+/* Nav component styles */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.4rem 3.5rem;
+  border-bottom: 0.5px solid var(--border);
+  background: rgba(8,8,16,0.88);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  z-index: 1000;
+}
+.logo { font-family: var(--serif); font-size: 17px; color: var(--text); letter-spacing: 0.2px; }
+.logo span { color: var(--accent); font-style: italic; }
+.status { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 11px; color: var(--green); letter-spacing: 0.5px; }
+.dot { width: 6px; height: 6px; background: var(--green); border-radius: 50%; animation: blink 2.5s ease-in-out infinite; }
+@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+.links { display: flex; gap: 2.5rem; align-items: center; }
+.links a { font-size: 12px; font-family: var(--mono); color: var(--muted); text-decoration: none; letter-spacing: 0.5px; transition: color 0.2s; }
+.links a:hover { color: var(--accent); }
+@media (max-width: 768px) { .nav { padding: 1rem 1.5rem; } .status { display: none; } .links { gap: 1.5rem; } }

@@ -1,0 +1,10 @@
+/* QualificationsSection component styles */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 0.5px solid var(--border); }
+.card { padding: 2.5rem; border-right: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.card.in { opacity: 1; transform: translateY(0); }
+.card:nth-child(3n) { border-right: none; }
+.card:nth-last-child(-n+3) { border-bottom: none; }
+.type { font-family: var(--mono); font-size: 9px; color: var(--accent); letter-spacing: 2px; margin-bottom: 1rem; }
+.name { font-family: var(--serif); font-size: 18px; font-weight: 400; margin-bottom: 0.4rem; line-height: 1.2; }
+.org { font-family: var(--mono); font-size: 11px; color: var(--subtle); }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } .card:nth-child(3n) { border-right: 0.5px solid var(--border); } .card:nth-child(2n) { border-right: none; } }

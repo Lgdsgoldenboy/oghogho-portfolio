@@ -1,0 +1,21 @@
+/* ProjectMock component styles */
+.mock { padding: 20px; width: 100%; }
+.topbar { display: flex; gap: 6px; margin-bottom: 16px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border2); }
+.r { background: rgba(255,100,100,0.35); } .y { background: rgba(255,200,60,0.35); } .g { background: rgba(100,255,160,0.35); }
+.bar { height: 7px; border-radius: 4px; background: rgba(180,156,255,0.15); margin-bottom: 8px; }
+.hi { background: rgba(180,156,255,0.4); }
+.row { display: flex; gap: 8px; margin-bottom: 10px; }
+.card { flex: 1; height: 48px; border-radius: 8px; background: rgba(180,156,255,0.08); border: 0.5px solid var(--border); }
+.cardHi { background: rgba(180,156,255,0.18); }
+.cardAccentHi { flex: 1; height: 64px; border-radius: 8px; background: rgba(180,156,255,0.15); border: 0.5px solid rgba(180,156,255,0.2); }
+.cardAccentDim { flex: 1; height: 64px; border-radius: 8px; background: rgba(180,156,255,0.07); border: 0.5px solid var(--border); }
+.avatar { width: 28px; height: 28px; border-radius: 50%; background: rgba(180,156,255,0.3); flex-shrink: 0; }
+.lines { flex: 1; display: flex; flex-direction: column; gap: 5px; justify-content: center; }
+.line { height: 5px; border-radius: 3px; background: rgba(237,233,255,0.07); }
+.lineS { width: 60%; } .lineAccent { background: rgba(180,156,255,0.4); }
+.tag { display: inline-block; padding: 3px 8px; border-radius: 10px; background: rgba(110,255,197,0.12); font-family: var(--mono); font-size: 9px; color: var(--green); letter-spacing: 0.5px; margin-right: 4px; }
+.tagOutline { font-family: var(--mono); font-size: 9px; color: var(--subtle); padding: 3px 8px; border-radius: 10px; border: 0.5px solid var(--border); }
+.searchBar { height: 30px; border-radius: 20px; border: 0.5px solid rgba(180,156,255,0.3); background: rgba(180,156,255,0.06); margin-bottom: 14px; display: flex; align-items: center; padding: 0 12px; }
+.sidebar { width: 60px; height: 120px; background: rgba(180,156,255,0.08); border-radius: 8px; border: 0.5px solid var(--border); flex-shrink: 0; }
+.heartWrap { width: 48px; height: 48px; background: rgba(255,100,120,0.2); border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; }
