@@ -16,4 +16,14 @@
 .factV { font-family: var(--mono); font-size: 12px; color: var(--text); text-align: right; }
 .factV a { color: var(--accent); text-decoration: none; }
 .factV a:hover { text-decoration: underline; }
-@media (max-width: 768px) { .about { grid-template-columns: 1fr; } .left { border-right: none; border-bottom: 0.5px solid var(--border); padding: 3rem 1.5rem; } .right { padding: 3rem 1.5rem; } }
+@media (max-width: 768px) {
+  .about { grid-template-columns: 1fr; }
+  .left {
+    border-right: none;
+    border-bottom: 0.5px solid var(--border);
+    padding: 3rem 1.5rem;
+  }
+  .right { padding: 3rem 1.5rem; }
+  .imgWrap img { height: 260px; }
+  .big { font-size: clamp(26px, 7vw, 38px); }
+}

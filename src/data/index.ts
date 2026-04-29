@@ -2,7 +2,7 @@ import type { Project, Experience, Qualification, WritingItem, Stat, FactRow, Sk
 
 export const stats: Stat[] = [
   { value: '2+', label: 'YRS EXPERIENCE' },
-  { value: '7+', label: 'PROJECTS SHIPPED' },
+  { value: '9+', label: 'PROJECTS SHIPPED' },
   { value: '1K+', label: 'COMMUNITY MEMBERS' },
   { value: '1', label: 'PUBLISHED BOOK' },
 ];
@@ -10,7 +10,7 @@ export const stats: Stat[] = [
 export const projects: Project[] = [
   {
     id: 'ox-lms',
-    index: '001 / 008',
+    index: '001 / 009',
     name: 'OX LMS',
     year: '2025 — Present',
     tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'LMS Platform'],
@@ -20,8 +20,19 @@ export const projects: Project[] = [
     image: '/OX.png',
   },
   {
+    id: 'ilike',
+    index: '002 / 009',
+    name: 'iLike',
+    year: '2025 — Present',
+    tags: ['React.js', 'TypeScript', 'iQubeLabs', 'Social Platform'],
+    desc: 'Social platform built at iQubeLabs. Contributing as assistant frontend developer — building and maintaining features, implementing responsive UI components, and collaborating with the core engineering team.',
+    link: 'https://staging.ilike.ng/home',
+    linkLabel: 'View staging',
+    image: '/iLike.png',
+  },
+  {
     id: '85gifts',
-    index: '002 / 008',
+    index: '003 / 009',
     name: '85gifts.com',
     year: '2025 — Present',
     tags: ['React.js', 'Firebase', 'Tailwind CSS', 'E-commerce'],
@@ -30,9 +41,20 @@ export const projects: Project[] = [
     linkLabel: 'View live',
     image: '/85gifts.png',
   },
+  {
+    id: 'omniflow85',
+    index: '004 / 009',
+    name: 'Omniflow85',
+    year: '2025',
+    tags: ['React.js', 'TypeScript', 'Business Suite', 'Dashboard UI'],
+    desc: 'Collaborated with a team of frontend developers to build an AI-powered business suite. Features include events and ticket booking, inventory management, cross-platform ads, invoices, payment links, and secure buyer-seller escrow — all in one platform.',
+    link: 'https://omniflow85.com',
+    linkLabel: 'View live',
+    image: '/omniflow85.png',
+  },
  {
   id: 'chatter',
-  index: '003 / 008',
+  index: '005 / 009',
   name: 'ChatterVerse',
   year: '2023',
   tags: ['Next.js', 'Firebase', 'Full Stack', 'Auth'],
@@ -43,7 +65,7 @@ export const projects: Project[] = [
 },
   {
     id: 'get-aid',
-    index: '004 / 008',
+    index: '006 / 009',
     name: 'Get Aid',
     year: '2023',
     tags: ['React.js', 'API integration', 'Healthcare'],
@@ -54,7 +76,7 @@ export const projects: Project[] = [
   },
   {
     id: 'github-search',
-    index: '005 / 008',
+    index: '007 / 009',
     name: 'GitHub Search',
     year: '2023',
     tags: ['React.js', 'GitHub API', 'Search UX'],
@@ -65,7 +87,7 @@ export const projects: Project[] = [
   },
   {
     id: 'tech-care',
-    index: '006 / 008',
+    index: '008 / 009',
     name: 'Tech-Care Dashboard',
     year: '2024',
     tags: ['React.js', 'Figma → Code', 'Dashboard UI'],
@@ -76,7 +98,7 @@ export const projects: Project[] = [
   },
   {
     id: 'valentine',
-    index: '007 / 008',
+    index: '009 / 009',
     name: 'Valentine App',
     year: '2024',
     tags: ['React.js', 'CSS Animations', 'Fun'],
@@ -84,17 +106,6 @@ export const projects: Project[] = [
     link: 'https://valentine-react-app-igho.vercel.app/',
     linkLabel: 'View project',
     image: '/Val-App.jpeg',
-  },
-  {
-    id: 'ilike',
-    index: '008 / 008',
-    name: 'iLike',
-    year: '2025 — Present',
-    tags: ['React.js', 'TypeScript', 'iQubeLabs', 'Social Platform'],
-    desc: 'Social platform built at iQubeLabs. Contributing as assistant frontend developer — building and maintaining features, implementing responsive UI components, and collaborating with the core engineering team.',
-    link: 'https://staging.ilike.ng/home',
-    linkLabel: 'View staging',
-    image: '/iLike.png',
   },
 ];
 

@@ -7,4 +7,10 @@
 .type { font-family: var(--mono); font-size: 9px; color: var(--accent); letter-spacing: 2px; margin-bottom: 1rem; }
 .name { font-family: var(--serif); font-size: 18px; font-weight: 400; margin-bottom: 0.4rem; line-height: 1.2; }
 .org { font-family: var(--mono); font-size: 11px; color: var(--subtle); }
-@media (max-width: 768px) { .grid { grid-template-columns: 1fr 1fr; } .card:nth-child(3n) { border-right: 0.5px solid var(--border); } .card:nth-child(2n) { border-right: none; } }
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .card { padding: 1.8rem 1.2rem; }
+  .card:nth-child(3n) { border-right: 0.5px solid var(--border); }
+  .card:nth-child(2n) { border-right: none; }
+  .name { font-size: 15px; }
+}
