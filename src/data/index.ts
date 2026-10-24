@@ -15,7 +15,7 @@ export const projects: Project[] = [
     year: '2025 — Present',
     tags: ['React.js', 'TypeScript', 'Tailwind CSS', 'LMS Platform'],
     desc: 'Learning management system for iQube.ox Tech Community. Sole frontend engineer — translated product designs into responsive, production-ready interfaces ensuring high design accuracy and performance.',
-    link: 'https://ox.iqubelabs.com/',
+    link: 'https://ox.iqubesolutions.com.ng/',
     linkLabel: 'View live',
     image: '/OX.png',
   },
@@ -52,17 +52,7 @@ export const projects: Project[] = [
     linkLabel: 'View live',
     image: '/omniflow85.png',
   },
- {
-  id: 'chatter',
-  index: '005 / 009',
-  name: 'ChatterVerse',
-  year: '2023',
-  tags: ['Next.js', 'Firebase', 'Full Stack', 'Auth'],
-  desc: 'Full-stack blogging platform where authors create and readers explore rich text-based content. Built with Next.js and Firebase auth, featuring a personalized feed, dashboard, content moderation, and real-time analytics.',
-  link: 'https://chatter-verse-og.vercel.app/',
-  linkLabel: 'View live',
-  image: '/ChatterVerse.png',
-},
+ 
   {
     id: 'get-aid',
     index: '006 / 009',
@@ -210,7 +200,7 @@ export const contactLinks: ContactLink[] = [
   { label: 'GitHub', href: 'https://github.com', symbol: '↗' },
   { label: 'LinkedIn', href: 'https://linkedin.com', symbol: '↗' },
   { label: 'X / Twitter', href: 'https://twitter.com', symbol: '↗' },
-  { label: 'Download CV', href: '/Oghogho Paul Orieno - FULL CV (1) update.pdf', symbol: '↓' },
+  { label: 'Download CV', href: '/Oghogho Paul Orieno - FULL CV (1) updated.pdf', symbol: '↓' },
 ];
 
 export const tickerItems = [
