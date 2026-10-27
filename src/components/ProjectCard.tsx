@@ -48,7 +48,13 @@ const ProjectCard: React.FC<{ project: Project; idx: number }> = ({ project, idx
                 className={styles.projImg}
               />
             ) : (
-              <ProjectMock variant={VARIANTS[idx % VARIANTS.length]} />
+              <ProjectMock
+                variant={
+                  project.id === 'chatter'
+                    ? 'chatter'
+                    : VARIANTS[idx % VARIANTS.length]
+                }
+              />
             )}
           </div>
         </div>

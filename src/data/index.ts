@@ -52,7 +52,17 @@ export const projects: Project[] = [
     linkLabel: 'View live',
     image: '/omniflow85.png',
   },
- 
+  {
+    id: 'chatter',
+    index: '005 / 009',
+    name: 'Chatter',
+    year: '2026 — Present',
+    tags: ['Next.js', 'React.js', 'Blogging Platform'],
+    desc: 'A blogging platform for curious readers and writers. Discover stories across topics, write and publish with a focused Markdown editor, and connect through shared ideas. An independent project built from design to deployment.',
+    link: 'https://chatter-xi-ruby.vercel.app/',
+    linkLabel: 'View live',
+    image: '/chatter-hero.jpg',
+  },
   {
     id: 'get-aid',
     index: '006 / 009',
